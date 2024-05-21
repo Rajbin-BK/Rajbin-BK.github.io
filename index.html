@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajbin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./Pictures/logo!.jpg" alt="Logo" style="width: 30px; height: 30px; border-radius: 10px;">
+        <div class="header-content">
+            <h2>Welcome to My Portfolio</h2>
+            <button id="resume-button">Resume</button>
+            <button id="nav-toggle" onclick="toggleNav()">
+                <img src="./Pictures/menu.webp" alt="Menu" style="width: 50px; height: 50px; border-radius: 10px;">
+            </button>
+            
+        </div>
+    </header>
+    
+    <div id="sidebar" class="sidebar">
+        <div class="profile-container">
+            <img src="./Pictures/logo!.jpg" alt="Profile Picture" class="sidebar-profile">
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/www.rajbin/" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/rajbin_shen/" target="_blank"><img src="icons/insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/rajbinbk" target="_blank"><img src="icons/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Rajbin-BK" target="_blank"><img src="icons/git.png" alt="GitHub"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" onclick="toggleNav()">Home</a>
+            <a href="#about" onclick="toggleNav()">About</a>
+            <a href="#portfolio" onclick="toggleNav()">Portfolio</a>
+            <a href="#services" onclick="toggleNav()">Skills</a>
+            <a href="#contact" onclick="toggleNav()">Contact Me</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="home">
+            <div class="home-content">
+                <h6>Hi, my name is </h6>
+                <h1>Rajbin BK.</h1>
+                <h2>I build things for the web.</h2>
+                <p>Welcome to my website! I am <span id="dynamic-text"></span></p>
+                <a href="#connect" class="connect-btn">Let's Connect</a>
+            </div>
+        </section>
+
+
+    
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    
+                    <p>Hello! I'm <strong>Rajbin BK</strong>, and I'm passionate about building things that enhance lives through the web. My interest in web development began during my early experiments with HTML & CSS, where I discovered the power of code to create interactive experiences.</p>
+                    <p>Fast-forward to today, I'm a Computer Science student at <strong>Algoma University</strong>, where I’ve honed my skills and earned awards for my academic achievements. I thrive on developing accessible, inclusive web and app solutions that not only meet but exceed user expectations.</p>
+                    <p>Recently, I've been focusing on expanding my expertise in cloud computing and interactive 3D web applications, preparing myself to contribute effectively to innovative and dynamic projects.</p>
+                    <p>Here are a few technologies I’ve been working with recently:</p>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Three.js</li>
+                        <li>AWS and Azure</li>
+                    </ul>
+                    <p>Let's connect and explore how we can create something amazing together!</p>
+                </div>
+                <div class="rect-img">
+                    <img src="./Pictures/profile!.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-grid">
+                    <div class="project">
+                        <a href="https://github.com/Rajbin-BK/3D-Maze-Runner" target="_blank">
+                            <img src="./Pictures/maze.png" alt="Maze">
+                            <video class="project-video" loop muted>
+                                <source src="./Video/Maze.mp4" type="video/mp4">
+                            </video>
+                            <div class="portfolio-description">3D Maze Runner</div>
+                        </a>
+                        <p class="project-description">A thrilling 3D maze game built with Three.js, allowing users to navigate through complex labyrinths with ease.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Rajbin-BK/3DHouse" target="_blank">
+                            <img src="./Pictures/House.png" alt="3D House">
+                            <video class="project-video" loop muted>
+                                <source src="./Video/3DH.mp4" type="video/mp4">
+                            </video>
+                            <div class="portfolio-description">3D House</div>
+                        </a>
+                        <p class="project-description">An interactive 3D house model created using Three.js, showcasing architectural design and animation.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Rajbin-BK/Forest" target="_blank">
+                            <img src="./Pictures/Forest.png" alt="Forest">
+                            <video class="project-video" loop muted>
+                                <source src="./Video/Forest.mp4" type="video/mp4">
+                            </video>
+                            <div class="portfolio-description">Forest</div>
+                        </a>
+                        <p class="project-description">A serene forest environment built with Three.js, featuring dynamic lighting and realistic textures.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Rajbin-BK/git-repo" target="_blank">
+                            <img src="./Pictures/SpaceInvader.png" alt="Space Invader">
+                            <video class="project-video" loop muted>
+                                <source src="./Video/Invader Game.mp4" type="video/mp4">
+                            </video>
+                            <div class="portfolio-description">Space Invader</div>
+                        </a>
+                        <p class="project-description">A classic space invader game recreated with modern web technologies, providing an engaging gameplay experience.</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Rajbin-BK/CovidApp" target="_blank">
+                            <img src="./Pictures/App_Logo.png" alt="Covid App">
+                            <video class="project-video" loop muted>
+                                <source src="./Video/Covid App.mp4" type="video/mp4">
+                            </video>
+                            <div class="portfolio-description">Covid App</div>
+                        </a>
+                        <p class="project-description">A comprehensive Covid-19 tracking app designed to provide real-time updates and statistics using various APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+           
+
+        <section id="services">
+            <h2>Skills</h2>
+            <div class = "skill-container">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="icons/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/css.webp" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/js.webp" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/react.webp" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/nodejs.webp" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/threejs.png" alt="Three.js">
+                    <p>Three.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/aws.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/azure.webp" alt="Azure">
+                    <p>Azure</p>
+                </div>
+                <div class="skill-item">
+                    <img src="icons/git.png" alt="GitHub">
+                    <p>Github</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+            </div>
+            
+        </section>
+
+        <section id="contact">
+        <h2>Contact Me</h2>
+            <div class="contact-container">
+                <form id="contact-form" action="https://formspree.io/f/xbjnbvnl" method="POST">
+                    <span class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </span>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        
+        </section>
+    </div>
+
+    <a href="#home" class="home-btn"><img src="icons/up.webp" alt="Up Arrow"></a>
+
+    <footer>
+        <p>Copyright &copy; 2024 by Rajbin . All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
