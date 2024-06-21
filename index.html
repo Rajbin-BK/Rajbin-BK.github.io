@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajbin</title>
+    <link rel="icon" type="image/png" href="./icons/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
         <div class="nav-links">
             <a href="#home" onclick="toggleNav()">Home</a>
             <a href="#about" onclick="toggleNav()">About</a>
-            <a href="#portfolio" onclick="toggleNav()">Portfolio</a>
+            <a href="#portfolio" onclick="toggleNav()">Projects</a>
             <a href="#services" onclick="toggleNav()">Skills</a>
             <a href="#contact" onclick="toggleNav()">Contact Me</a>
         </div>
@@ -52,7 +53,7 @@
 
     
         <section id="about">
-            <h2>About Me</h2>
+            <h2 >About Me</h2>
             <div class="about-container">
                 <div class="about-text">
                     
@@ -76,62 +77,106 @@
         </section>
         
         <section id="portfolio">
-            <h2>Portfolio</h2>
+            <h2>Project</h2>
+            <p class="project-info">Discover my portfolio of projects in game, web, and app development. Each piece reflects my passion for blending creativity with technical expertise. From immersive 3D mazes to interactive websites and engaging games, explore how I bring ideas to life through innovative design and coding.</p>
+
+
             <div class="portfolio-container">
                 <div class="portfolio-grid">
+
                     <div class="project">
-                        <a href="https://github.com/Rajbin-BK/3D-Maze-Runner" target="_blank">
-                            <img src="./Pictures/maze.png" alt="Maze">
-                            <video class="project-video" loop muted>
-                                <source src="./Video/Maze.mp4" type="video/mp4">
-                            </video>
-                            <div class="portfolio-description">3D Maze Runner</div>
-                        </a>
-                        <p class="project-description">A thrilling 3D maze game built with Three.js, allowing users to navigate through complex labyrinths with ease.</p>
+                        <div class="pic">
+                            <a href="https://github.com/Rajbin-BK/3D-Maze-Runner" target="_blank">
+                                <img src="./Pictures/maze.png" alt="Maze">
+                                <video class="project-video" loop muted>
+                                    <source src="./Video/Maze.mp4" type="video/mp4">
+                                </video>
+                                
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h3>3D Maze Runner</h3>
+                            <p>Maze Adventure is a first-person 3D maze exploration game developed using Three.js, a powerful JavaScript library for creating animated 3D graphics. The game features a detailed maze environment with textured floors and walls, dynamic lighting effects including ambient light, directional lights, and spotlights, all of which enhance the visual experience. Various interactive 3D models such as stones, hearts, and plants are imported using GLTFLoader, OBJLoader, and MTLLoader to add depth to the maze. Players navigate the maze from a first-person perspective using intuitive keyboard controls, creating an immersive and engaging gameplay experience.</p>
+                        </div>
                     </div>
+
+
                     <div class="project">
-                        <a href="https://github.com/Rajbin-BK/3DHouse" target="_blank">
-                            <img src="./Pictures/House.png" alt="3D House">
-                            <video class="project-video" loop muted>
-                                <source src="./Video/3DH.mp4" type="video/mp4">
-                            </video>
-                            <div class="portfolio-description">3D House</div>
-                        </a>
-                        <p class="project-description">An interactive 3D house model created using Three.js, showcasing architectural design and animation.</p>
+                        <div class="pic">
+                            <a href="https://github.com/Rajbin-BK/3DHouse" target="_blank">
+                                <img src="./Pictures/House.png" alt="3D House">
+                                <video class="project-video" loop muted>
+                                    <source src="./Video/3DH.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            
+                        </div>
+                        <div class="project-description">
+                            <h3>3D House</h3>
+                           <p>
+                            This project involves creating a detailed 3D environment using Three.js, a powerful JavaScript library for rendering 3D graphics in the browser. The scene includes a dynamic water surface with realistic reflections and waves, created using the Water2.js class. A first-person perspective is implemented through a movable sphere that the camera follows closely. The environment also features a skydome with changing textures for day, sunset, and night, and a variety of 3D models including a house with detailed interiors, a floor, roof, furniture, and other objects imported using GLTFLoader. Lighting is carefully managed with ambient, directional, and spotlights to enhance realism. User interaction is enabled through keyboard controls, allowing movement and rotation of the first-person sphere, as well as changing the skydome phase, providing an immersive and interactive experience.
+                           </p> 
+                            
+                        </div>
                     </div>
+
+
                     <div class="project">
-                        <a href="https://github.com/Rajbin-BK/Forest" target="_blank">
-                            <img src="./Pictures/Forest.png" alt="Forest">
-                            <video class="project-video" loop muted>
-                                <source src="./Video/Forest.mp4" type="video/mp4">
-                            </video>
-                            <div class="portfolio-description">Forest</div>
-                        </a>
-                        <p class="project-description">A serene forest environment built with Three.js, featuring dynamic lighting and realistic textures.</p>
+                        <div class="pic">
+                            <a href="https://github.com/Rajbin-BK/git-repo" target="_blank">
+                                <img src="./Pictures/SpaceInvader.png" alt="Space Invader">
+                                <video class="project-video" loop muted>
+                                    <source src="./Video/Invader Game.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            
+                        </div>
+                        <div class="project-description">
+                            <h3>Space Invader</h3>
+                            <p>
+                                This project is a 3D space shooter game developed using Three.js, a powerful JavaScript library that enables rendering of 3D graphics in web browsers. Players engage in interactive gameplay where they control a cannon to shoot lasers at alien adversaries. The game includes automatic shooting functionality, allowing continuous engagement without manual firing. It features obstacle blocks that add challenge and strategy to gameplay, and includes real-time scoring to track player performance. This project effectively demonstrates the capabilities of Three.js for creating immersive 3D games on the web, showcasing its utility in building interactive and visually compelling experiences directly within the browser environment.
+                            </p>
+                        </div>
                     </div>
+
+
                     <div class="project">
-                        <a href="https://github.com/Rajbin-BK/git-repo" target="_blank">
-                            <img src="./Pictures/SpaceInvader.png" alt="Space Invader">
-                            <video class="project-video" loop muted>
-                                <source src="./Video/Invader Game.mp4" type="video/mp4">
-                            </video>
-                            <div class="portfolio-description">Space Invader</div>
-                        </a>
-                        <p class="project-description">A classic space invader game recreated with modern web technologies, providing an engaging gameplay experience.</p>
+                        <div class="pic">
+                            <a href="https://github.com/Rajbin-BK/Forest" target="_blank">
+                                <img src="./Pictures/Forest.png" alt="Forest">
+                                <video class="project-video" loop muted>
+                                    <source src="./Video/Forest.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            
+                        </div>
+                        <div class="project-description">
+                            <h3>Forest</h3>
+                            <p>
+                                
+This project utilizes Three.js, a JavaScript library for creating 3D graphics in web browsers, to develop a dynamic scene featuring a lush environment. The scene includes a spherical skydome with a panoramic texture, providing a realistic backdrop. It incorporates a circular ground plane with a repeating grass texture, demonstrating texture mapping capabilities. The environment is populated with trees of varying types and sizes, generated procedurally and placed randomly within a defined circular area. Each tree type is distinct, featuring detailed trunks and foliage textured with images of branches and leaves. Lighting is employed to enhance the scene's visual depth and realism. The project showcases Three.js' ability to render complex 3D environments with interactive elements directly in the browser, offering a visually compelling experience for users
+                            </p>
+                        </div>
                     </div>
+
                     <div class="project">
-                        <a href="https://github.com/Rajbin-BK/CovidApp" target="_blank">
-                            <img src="./Pictures/App_Logo.png" alt="Covid App">
-                            <video class="project-video" loop muted>
-                                <source src="./Video/Covid App.mp4" type="video/mp4">
-                            </video>
-                            <div class="portfolio-description">Covid App</div>
-                        </a>
-                        <p class="project-description">A comprehensive Covid-19 tracking app designed to provide real-time updates and statistics using various APIs.</p>
+                        <div class="pic">
+                            <a href="https://github.com/Rajbin-BK/CovidApp" target="_blank">
+                                <img src="./Pictures/App_Logo.png" alt="Covid App">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h3>Covid App</h3>
+                        <p>
+                            A comprehensive Covid-19 tracking app designed to provide real-time updates and statistics using various APIs.
+                        </p>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         
            
 
