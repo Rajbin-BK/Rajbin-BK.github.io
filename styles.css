@@ -330,16 +330,16 @@ section {
     background-color: rgba(0, 193, 193, 0.968);
     border-radius: 10px;
     border: none;
-    position: fixed; /* Change from relative to fixed */
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
     z-index: 1000; /* Ensure the button appears above other content */
     transition: all 0.3s ease; /* Add transition for smooth hover effect */
 }
 .home-btn img {
-    max-width: 100%; /* Ensure image fits inside the button */
-    max-height: 100%; /* Ensure image fits inside the button */
-    object-fit: cover; /* Cover the entire button */
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
 }
 
 .home-btn:hover {
@@ -357,6 +357,33 @@ section {
         font-size: 14px;
         padding: 12px 24px;
     }
+
+    .home-btn {
+        height:20px;
+        width:20px;
+        margin-bottom: 40px;
+        margin-right: 30px;
+        padding: 10px 20px;
+        background-color: rgba(0, 193, 193, 0.968);
+        border-radius: 10px;
+        border: none;
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 1000; /* Ensure the button appears above other content */
+        transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    }
+    .home-btn img {
+        max-width: 100%; 
+        max-height: 100%; 
+        object-fit: cover; 
+    }
+    
+    .home-btn:hover {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.9);
+        transform: scale(1.05); /* Add slight scale effect on hover */
+    }
+
 }
 
 
@@ -578,6 +605,7 @@ section {
     
     
     .project {
+        height:min-content;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -764,7 +792,7 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 80%;
     align-items: center;
     justify-content:center;
 }
@@ -846,12 +874,16 @@ textarea {
     #contact {
         padding: 30px 15px;
     }
+    .contact-container {
+        margin-left:40px;
+    }
 
     .contact-form {
         grid-template-columns: 1fr;
     }
 
     .submit-btn {
+        
         justify-self: center;
     }
 }
