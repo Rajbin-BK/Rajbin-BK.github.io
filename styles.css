@@ -836,7 +836,6 @@ section {
     background: rgb(18,71,77);
     background: radial-gradient(circle, rgba(18,71,77,1) 29%, rgba(15,38,40,1) 65%);
     box-shadow: 0 2px 5px rgba(25, 56, 50, 0.929);
-    border-radius: 20px;
     margin:0 auto;
     max-width: 100%;
     color: #d8d5d3;
