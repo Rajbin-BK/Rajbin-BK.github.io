@@ -151,6 +151,13 @@ footer {
 
 @media (max-width: 768px) {
 
+
+    body, html {
+        
+        background: url('./Pictures/background.jpg') no-repeat center center fixed; 
+        background-size:cover;
+    }
+
     .header-content {
         width: calc(100% - 80px);
         display: flex;
